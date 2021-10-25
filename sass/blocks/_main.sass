@@ -1,0 +1,119 @@
+.main
+.slider
+.slide
+    border-radius: 20px
+    min-height: 400px
+    display: flex
+    align-items: center
+    padding: 100px
+    position: relative
+    overflow: hidden
+    &__summer
+        background-image: url('../img/summer.png')
+        background-repeat: no-repeat
+        background-size: cover
+    &__summer::before
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%)
+    &__text-light
+        color: #ffffff
+    &__content
+        max-width: 400px
+        position: relative
+    &__title
+        margin-top: 0
+        margin-bottom: 15px
+        font-weight: bold
+        font-size: 50px
+        line-height: 51px
+    &__text
+        font-weight: bold
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 30px
+.button
+    border-radius: 25px
+    text-decoration: none
+    display: inline-block
+    font-weight: 500
+    font-size: 14px
+    line-height: 23px
+    padding: 11px 50px
+    &__primary
+        background: #F47322
+        color: #ffffff
+    &__default
+        background-color: #ffffff
+        color: #5F5F61
+.promo
+    padding-top: 50px
+    padding-bottom: 50px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: -20px
+.card
+    flex: 50%
+    margin: 20px
+    position: relative
+    border-radius: 20px
+    overflow: hidden
+    padding: 32px
+    max-width: 570px
+    min-height: 380px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__text-light
+        color: #ffffff
+    &__title
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+        margin-top: 4px
+        margin-bottom: 21px
+    &__text
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        max-width: 200px
+    &__price
+        display: block
+        font-weight: 500
+        font-size: 24px
+        line-height: 23px
+        margin-bottom: 8px
+    &__delivery
+        display: block
+        font-weight: 500
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 25px
+    &__image
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        z-index: -2
+        object-fit: cover
+.card:before
+    z-index: -1
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
