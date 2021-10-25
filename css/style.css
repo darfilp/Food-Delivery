@@ -864,6 +864,10 @@ template {
   color: #49494F;
 }
 
+.footer {
+  padding: 40px 0;
+}
+
 .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
